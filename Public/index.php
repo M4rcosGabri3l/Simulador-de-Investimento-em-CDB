@@ -19,7 +19,7 @@ require_once "../Modules/CDB_Logic.php";
 
     <link rel="icon" href="icon/banpara-logo.png" type="image/png">
 
-    <title>Calculo CDB V.1</title>
+    <title>Calculo CDB</title>
 </head>
 
 <body>
