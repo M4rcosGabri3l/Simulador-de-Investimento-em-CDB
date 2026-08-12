@@ -35,10 +35,6 @@ class Erro_Handler {
          
          $this->Analise_Erro = 1;
          
-         //var_dump($this->Analise_Erro);
-         
-         //http_response_code(500);
-         
          die();
       }
      
