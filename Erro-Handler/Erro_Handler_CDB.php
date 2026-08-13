@@ -31,8 +31,6 @@ class Erro_Handler {
      
          error_log($Mensagem_Erro);  
          
-         echo $Mensagem_Erro;
-         
          $this->Analise_Erro = 1;
          
          die();
