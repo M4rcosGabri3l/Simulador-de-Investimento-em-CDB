@@ -33,7 +33,7 @@ class Erro_Handler {
          
          $this->Analise_Erro = 1;
          
-         die();
+         die(header('Location: /CURSO_PHP/CDB_System/Public/Paginas_Erros/Error_404.php'));
       }
      
      
@@ -60,3 +60,5 @@ class Erro_Handler {
   }
 
 } 
+
+$Erro_Handler = new Erro_Handler();

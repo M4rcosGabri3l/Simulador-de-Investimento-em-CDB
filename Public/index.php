@@ -145,7 +145,7 @@ require_once "../Modules/CDB_Logic.php";
                 id="cdi"
                 placeholder="Ex: 110"
                     <?php if (!isset($Erros_Formulario['CDI_Erro']) && isset($Validate)): ?>
-                    value="<?= htmlspecialchars($Validate->CDI, ENT_QUOTES, 'UTF-8') ?>"
+                    value="<?= htmlspecialchars($Validate->CDI ?? '', ENT_QUOTES, 'UTF-8') ?>"
                     <?php endif; ?>>
             </p>
 
@@ -162,7 +162,7 @@ require_once "../Modules/CDB_Logic.php";
                     id="cdi_atual"
                     placeholder="Carregando CDI..."
                     <?php if (!isset($Erros_Formulario['CDI_ATUAL_Erro']) && isset($Validate)): ?>
-                    value="<?= htmlspecialchars($Validate->CDI_ATUAL, ENT_QUOTES, 'UTF-8') ?>"
+                    value="<?= htmlspecialchars($Validate->CDI_ATUAL ?? '', ENT_QUOTES, 'UTF-8') ?>"
                     <?php endif; ?>>
             </p>
 
@@ -195,7 +195,7 @@ require_once "../Modules/CDB_Logic.php";
                     id="taxa_prefixada"
                     placeholder="Ex: 15"
                     <?php if (!isset($Erros_Formulario['Taxa_Prefixada_Erro']) && isset($Validate)): ?>
-                    value="<?= htmlspecialchars($Validate->Taxa_Prefixada, ENT_QUOTES, 'UTF-8') ?>"
+                    value="<?= htmlspecialchars($Validate->Taxa_Prefixada ?? '', ENT_QUOTES, 'UTF-8') ?>"
                     <?php endif; ?>
                 >
 
