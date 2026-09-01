@@ -485,6 +485,8 @@ Lucro líquido = Valor líquido - Valor investido
 
 Além de calcular apenas o resultado final, o sistema cria uma sequência intermediária de valores para mostrar a evolução do patrimônio.
 
+![Grafico de Evolução](screenshots/Grafico_cdb.png)
+
 A lógica percorre os dias da operação:
 
 ```php
@@ -537,7 +539,7 @@ A saída possui formato semelhante a:
 ]
 ```
 
-Esses dados são utilizados pelo **Chart.js** para montar um gráfico de linha.
+Esses dados são utilizados pelo **Chart.js** para montar o gráfico de linha.
 
 O gráfico permite ao usuário visualizar o crescimento do patrimônio ao longo do prazo escolhido.
 
