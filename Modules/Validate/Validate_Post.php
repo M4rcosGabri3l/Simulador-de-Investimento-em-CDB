@@ -132,7 +132,6 @@ class Validate_Post
 
                     if ($this->Taxa_Prefixada !== "" && $this->Taxa_Prefixada !== null && $this->Taxa_Prefixada != 0) {
 
-                        //var_dump($this->Taxa_Prefixada);
 
                         if ($this->Taxa_Prefixada < 0 || $this->Taxa_Prefixada > 100) {
                             $this->Add_Erro([

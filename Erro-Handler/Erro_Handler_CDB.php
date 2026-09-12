@@ -6,7 +6,7 @@ ini_set('dislay_startup_errors', '1');
 
 
 ini_set('log_errors', '0');
-ini_set('error_log', 'C:\xampp\htdocs\CURSO_PHP\CDB_System\Erro-Handler\log-erro.txt');
+ini_set('error_log', '../Erro-Handler/log-erro.txt');
 
 
 class Erro_Handler {
@@ -33,7 +33,7 @@ class Erro_Handler {
          
          $this->Analise_Erro = 1;
          
-         die(header('Location: /CURSO_PHP/CDB_System/Public/Paginas_Erros/Error_404.php'));
+         die(header('Location: ../Public/Paginas_Erros/Error_404.php'));
       }
      
      

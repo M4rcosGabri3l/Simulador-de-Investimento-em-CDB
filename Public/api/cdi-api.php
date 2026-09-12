@@ -1,7 +1,7 @@
 <?php
 
 // Gerenciamento de Erros
-require_once "C:/xampp/htdocs/CURSO_PHP/CDB_System/Erro-Handler/Erro_Handler_CDB.php";
+require_once __DIR__ . '/../../Erro-Handler/Erro_Handler_CDB.php';
 
 header(
     'Content-Type: application/json'
@@ -26,7 +26,7 @@ $dados['data_inicial'] ?? '';
 $data_final =
 $dados['data_final'] ?? '';
 
-require_once "C:/xampp/htdocs/CURSO_PHP/CDB_System/Modules/Validate/Validate_Post.php";
+require_once __DIR__ . '/../../Modules/Validate/Validate_Post.php';
 $Validate = new Validate_Post();
 
 $Erro_Data = $Validate->validate_data(

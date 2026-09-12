@@ -38,7 +38,7 @@ $mensagem =
 
     <link
         rel="stylesheet"
-        href="/CURSO_PHP/CDB_System/Public/css/erro_page.css"
+        href= "../css/erro_page.css"
     >
 
 </head>
@@ -70,7 +70,7 @@ $mensagem =
             </p>
 
             <a
-                href="/CURSO_PHP/CDB_System/Public/"
+                href="../index.php"
                 class="botao-voltar"
             >
                 Voltar para o início

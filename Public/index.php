@@ -1,10 +1,10 @@
 <?php 
 
 // Gerenciamento de Erros
-require_once "../Erro-Handler/Erro_Handler_CDB.php";
+require_once __DIR__ . '/../Erro-Handler/Erro_Handler_CDB.php';
 
 // Carregando Module
-require_once "../Modules/CDB_Logic.php";
+require_once __DIR__ . '/../Modules/CDB_Logic.php';
 
 ?>
 
@@ -15,17 +15,18 @@ require_once "../Modules/CDB_Logic.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/cdb.css">
+    <link rel="stylesheet" href="../Public/css/cdb.css">
 
-    <link rel="icon" href="icon/banpara-logo.png" type="image/png">
+    <link rel="icon" href="../Public/icon/banpara-logo.png" type="image/png">
 
     <title>Calculo CDB</title>
+    
 </head>
 
 <body>
 
     <div class="brand-header">
-        <img src="icon/banpara-logo.png" alt="Logo Banpará">
+        <img src="../Public/icon/banpara-logo.png" alt="Logo Banpará">
         <h1>Cálculo de CDB</h1>
     </div>
 
@@ -237,7 +238,7 @@ require_once "../Modules/CDB_Logic.php";
             try {
 
                 const response =
-                await fetch('/CURSO_PHP/CDB_System/Public/api/cdi-api.php', {
+                await fetch('api/cdi-api.php', {
                     method: 'POST',
 
                         headers: {
